@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Eric Zell Launch Academy Slacker News Challenge html-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+    <link rel="shortcut icon" type="image/x-icon" href="slogo.gif" />
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav class="clearfix">
+        <img class="logo" src="/slogo.gif">
+        <h1><a href="/articles">Slacker News</a></h1>
+        <ul>
+          <li><a href="/articles/new">submit a new article!</a></li>
+        </ul>
+      </nav>
+      <div class="main-container">
+        <%= yield %>
+      </div>
+      <div class="footer">
+        <ul>
+          <li><a href="f1">Guidelines</a> | </li>
+          <li><a href="f2">FAQ</a> | </li>
+          <li><a href="f3">Support</a> | </li>
+          <li><a href="f4">API</a> | </li>
+          <li><a href="f5">Security</a> | </li>
+          <li><a href="f6">Lists</a> | </li>
+          <li><a href="f7">Bookmarklet</a> | </li>
+          <li><a href="f8">DMCA</a> | </li>
+          <li><a href="f9">Apply to YC</a> | </li>
+          <li><a href="f10">Contact</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </body>
+</html>

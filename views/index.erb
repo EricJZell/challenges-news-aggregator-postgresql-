@@ -1,0 +1,11 @@
+
+<ol class="search-result-list">
+  <%articles.each do |article|%>
+    <li>
+      <a href=""><img class="vote" src="https://news.ycombinator.com/grayarrow.gif"></a>
+      <a target="_blank" href="<%=article["url"]%>"><%=article["title"]%></a>
+      <p class="source">(<%=article["url"]%>)</p>
+      <p><%=article["description"]%></p>
+    </li>
+  <% end %>
+</ol>
