@@ -13,6 +13,10 @@ def db_connection
   end
 end
 
+get "/" do
+  redirect "/articles"
+end
+
 get "/articles" do
   articles = db_connection { |conn| conn.exec("SELECT title, url, description FROM articles") }
   #pry
